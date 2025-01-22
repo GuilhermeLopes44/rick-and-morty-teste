@@ -16,7 +16,7 @@ body {
 }
 
 /* Cabeçalho */
-header {
+header {    
     text-align: center;
     padding: 20px 0;
     background: radial-gradient(circle, #292929, #001f2d);
@@ -261,4 +261,3 @@ footer p {
         padding: 10px;
     }
 }
-
