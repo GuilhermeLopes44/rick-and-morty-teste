@@ -1,0 +1,222 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Fonte futurista */
+    background-color: #001f2d; /* Fundo escuro inspirado no universo de Rick and Morty */
+    color: #e4e4e4; /* Cor do texto em cinza claro */
+    line-height: 1.6;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+header .logo-container {
+    margin-bottom: 20px;
+}
+
+header .logo {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #00d0ff; /* Azul Rick */
+    text-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff, 0 0 30px #00d0ff;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #90ee90; /* Verde Morty */
+    margin-top: 10px;
+}
+
+/* Navegação */
+nav {
+    background-color: #00d0ff; /* Azul Rick */
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav a {
+    color: #001f2d; /* Texto preto */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4c00; /* Laranja vibrante (portal de Rick) */
+}
+
+/* Seções */
+main {
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    font-size: 28px;
+    color: #00d0ff; /* Azul de Rick */
+    border-bottom: 3px solid #ff4c00; /* Linha vermelha do portal de Rick */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    color: #e4e4e4; /* Cor clara do texto */
+    line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+    background-color: #001f2d; /* Fundo escuro */
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 3px solid #00d0ff;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #ff4c00; /* Laranja vibrante */
+}
+
+footer img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 768px) {
+    /* Reduzindo tamanho da fonte no cabeçalho */
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    /* Tornando o menu de navegação vertical */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    /* Ajustando o tamanho das imagens no rodapé */
+    footer .footer-links {
+        flex-direction: column;
+    }
+
+    footer img {
+        width: 120px;
+    }
+
+    /* Ajuste das seções */
+    section h3 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (por exemplo, smartphones em modo retrato) */
+@media (max-width: 480px) {
+    /* Ajustando fonte do título principal */
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    /* Ajuste das margens e paddings */
+    main {
+        padding: 0 10px;
+    }
+
+    /* Ajustes nos links do rodapé */
+    footer a {
+        font-size: 16px;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    /* Ajustando o texto das seções */
+    section h3 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
