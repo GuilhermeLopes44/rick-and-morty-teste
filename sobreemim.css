@@ -153,6 +153,11 @@ footer .footer-links img {
     nav ul {
         flex-direction: column;
         gap: 15px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
     }
 
     section h3 {
@@ -202,6 +207,41 @@ footer .footer-links img {
     }
 
     footer .footer-links img {
-        width: 40px; /* Ajuste final para o tamanho das imagens */
+        width: 35px; /* Ajuste final para o tamanho das imagens */
+    }
+}
+
+/* Ajustes para telas pequenas (telefones) */
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header h2 {
+        font-size: 12px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    section p, section ul {
+        font-size: 10px;
+    }
+
+    footer .footer-links a {
+        font-size: 10px;
+    }
+
+    footer .footer-links img {
+        width: 30px; /* Ajuste final para dispositivos pequenos */
     }
 }
